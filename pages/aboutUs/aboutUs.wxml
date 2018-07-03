@@ -1,2 +1,18 @@
 <!--pages/aboutUs/aboutUs.wxml-->
-<text>pages/aboutUs/aboutUs.wxml</text>
+<view>
+  <view class='top'>
+    <view class='logo'>
+      <image src='../../resources/companyLogo.png'></image>
+    </view>
+    <view class='title'>
+      <text>都睿商贸(上海）有限公司</text>
+    </view>
+    <view class='text'>
+        <text>启初，我们从淘宝美妆店铺分销做起。</text>
+        <text>011年我们通过品牌授权的模式，合作了第一个美妆淘宝店铺，随后，10家，50家，100家……。</text>
+        <text>从一个授权品牌到10个授权品牌，到20个授权品牌……</text>
+        <text>从800+家淘宝美妆店铺到APP渠道，零售平台，微信公众号渠道……</text>
+        <text>专注服务美妆品牌与渠道零售商家，搭建更高效的B2B沟通机制，专注细节服务，满足客户需求，我们注重人才培养，有目标，也有信念。          </text>
+    </view>
+  </view>
+</view>

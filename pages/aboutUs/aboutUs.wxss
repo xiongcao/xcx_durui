@@ -1,1 +1,33 @@
 /* pages/aboutUs/aboutUs.wxss */
+.top{
+  background: #ffffff;
+  padding:30rpx 26rpx 22rpx;
+}
+
+.logo{
+  text-align: center;
+  margin-bottom:18rpx;
+}
+
+.logo image{
+  width:240rpx;
+  height:168rpx;
+}
+
+.title{
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: 500;
+  color: #4a4a4a;
+  margin-bottom:18rpx;
+}
+
+.text{
+  font-size: 26rpx;
+  color: #4a4a4a;
+  
+}
+
+.text text{
+  display: block;
+}

@@ -1,2 +1,11 @@
 <!--pages/baopin/baopin.wxml-->
-<text>pages/baopin/baopin.wxml</text>
+<view class="baopin">
+  <view wx:for="{{commodityImgList}}" wx:for-item="imageList" wx:key="a">
+    <view class="title">{{imageList.name}}</view>
+    <view class='imageBody'>
+      <block wx:for="{{imageList.imageList}}" wx:for-item="image"  wx:key="b">
+        <image src="{{image.image}}"></image>
+      </block>
+    </view>
+  </view>
+</view>

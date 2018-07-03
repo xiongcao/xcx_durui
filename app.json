@@ -7,15 +7,15 @@
   "window":{
     "backgroundTextStyle":"light",
     "backgroundColor":"#f8f8f8",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#2c2d31",
     "navigationBarTitleText": "都睿",
-    "navigationBarTextStyle":"black",
+    "navigationBarTextStyle":"white",
     "enablePullDownRefresh":false
   },
   "tabBar":{
     "color":"#8e8e93",
     "selectedColor":"#00ae6f",
-    "backgroundColor":"#ffffff",
+    "backgroundColor":"#f7f7fa",
     "borderStyle":"white",
     "list":[
       {
