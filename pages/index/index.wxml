@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view >
+   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="aa">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper> 
+  <view class='brandImgList'>
+    <block wx:for="{{brandImgList}}" wx:for-item="img" wx:key="b">
+      <image src="{{img}}"></image>
+    </block>
+  </view>
+</view>

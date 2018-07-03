@@ -1,0 +1,16 @@
+/**index.wxss**/
+swiper swiper-item,swiper swiper-item image{
+  width: 750rpx;
+}
+
+.brandImgList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.brandImgList image{
+  width: 240rpx;
+  height: 240rpx;
+  margin-bottom: 10px;
+}

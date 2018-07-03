@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/baopin/baopin",
+    "pages/aboutUs/aboutUs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor":"#f8f8f8",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "都睿",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":false
+  },
+  "tabBar":{
+    "color":"#8e8e93",
+    "selectedColor":"#00ae6f",
+    "backgroundColor":"#ffffff",
+    "borderStyle":"white",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text":"品牌",
+        "iconPath":"/resources/toolBar_brandList.png",
+        "selectedIconPath":"/resources/toolBar_brandListLight.png"
+      },
+      {
+        "pagePath": "pages/baopin/baopin",
+        "text": "爆品",
+        "iconPath": "/resources/toolBar_commodityList.png",
+        "selectedIconPath": "/resources/toolBar_commodityListLight.png"
+      },
+      {
+        "pagePath": "pages/aboutUs/aboutUs",
+        "text": "我的",
+        "iconPath": "/resources/toolBar_mine.png",
+        "selectedIconPath": "/resources/toolBar_minelight.png"
+      }
+    ]
+  },
+  "debug":true
+}
