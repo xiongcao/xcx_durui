@@ -31,3 +31,79 @@
 .text text{
   display: block;
 }
+
+.contact{
+  margin:10rpx 0;
+  padding:24rpx 26rpx 26rpx;
+  background: #ffffff;
+}
+
+.contact .ctitle{
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #4a4a4a;
+  margin-bottom: 20rpx;
+}
+
+.contact view{ 
+  font-size: 26rpx;
+  color: #4a4a4a;
+}
+
+.contact .phoneNumber{
+  margin-top: 24rpx;
+  margin-bottom: 14rpx;
+}
+
+.sample{
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #ffffff;
+  padding: 0 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sample>view{
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.arrow{
+  width: 20rpx;
+  height:20rpx;
+  transform: rotate(-90deg);
+}
+
+.company {
+  background: #ffffff;
+  padding: 16rpx 26rpx 26rpx;
+  margin:10rpx 0;
+}
+
+.company>.title{
+  height:42rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.company .ctitle{
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.companyImages{
+  height: 200rpx;
+}
+
+.companyImages>image{
+  width: 200rpx;
+  height:200rpx;
+  margin-right:20rpx;
+  float: left;
+}

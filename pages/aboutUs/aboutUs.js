@@ -1,13 +1,29 @@
 // pages/aboutUs/aboutUs.js
+
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    shouquanshu: [
+      `${app.globalData.imagePath}/shouquanshu/aolunna.jpg`,
+      `${app.globalData.imagePath}/shouquanshu/babyFoot.jpg`,
+      `${app.globalData.imagePath}/shouquanshu/hairmax.jpg`
+    ],
+    companyImage: [
+      `${app.globalData.imagePath}/companyImage/1.jpg`,
+      `${app.globalData.imagePath}/companyImage/2.jpg`,
+      `${app.globalData.imagePath}/companyImage/3.jpg`
+    ],
   },
-
+  aptitude:function(){
+    console.log("aptitude");
+  },
+  companyImages:function(){
+    console.log("companyImages");
+  },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -15,4 +15,35 @@
         <text>专注服务美妆品牌与渠道零售商家，搭建更高效的B2B沟通机制，专注细节服务，满足客户需求，我们注重人才培养，有目标，也有信念。          </text>
     </view>
   </view>
+  <view class='contact'>
+    <view class='ctitle'>联系我们</view>
+    <view class='address'>公司地址：上海市徐汇区虹桥路333号505B</view>
+    <view class='phoneNumber'>联系方式：18502133310（周红）</view>
+  </view>
+  <view class='sample'>
+    <view>样品申请</view>
+    <image class="arrow" src="/resources/arrow.png"></image>
+  </view>
+  <view class='company' bindtap='aptitude'>
+    <view class='title'>
+      <view class='ctitle'>公司资质</view>
+      <image class="arrow" src="/resources/arrow.png"></image>
+    </view>
+    <view class='companyImages' >
+      <block wx:for="{{shouquanshu}}" wx:for-item="img" wx:key="a">
+        <image src="{{img}}"></image>
+      </block>
+    </view>
+  </view>
+  <view class='company' bindtap="companyImages">
+    <view class='title'>
+      <view class='ctitle'>公司图片</view>
+      <image class="arrow" src="/resources/arrow.png"></image>
+    </view>
+    <view class='companyImages' >
+      <block wx:for="{{companyImage}}" wx:for-item="img" wx:key="b">
+        <image src="{{img}}"></image>
+      </block>
+    </view>
+  </view>
 </view>
