@@ -35,6 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    imagePath:"/resources"
+    imagePath:"/resources",
+    ossImagePath:'http://oss.kxlist.com/durui'
   }
 })

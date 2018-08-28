@@ -1,28 +1,30 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/baopin/baopin",
-    "pages/aboutUs/aboutUs"
+    "pages/aboutUs/aboutUs",
+    "pages/companyImage/companyImage",
+    "pages/companyAptitude/companyAptitude"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "backgroundColor":"#f8f8f8",
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#f8f8f8",
     "navigationBarBackgroundColor": "#2c2d31",
     "navigationBarTitleText": "都睿",
-    "navigationBarTextStyle":"white",
-    "enablePullDownRefresh":false
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
   },
-  "tabBar":{
-    "color":"#8e8e93",
-    "selectedColor":"#00ae6f",
-    "backgroundColor":"#f7f7fa",
-    "borderStyle":"white",
-    "list":[
+  "tabBar": {
+    "color": "#8e8e93",
+    "selectedColor": "#00ae6f",
+    "backgroundColor": "#f7f7fa",
+    "borderStyle": "white",
+    "list": [
       {
         "pagePath": "pages/index/index",
-        "text":"品牌",
-        "iconPath":"/resources/toolBar_brandList.png",
-        "selectedIconPath":"/resources/toolBar_brandListLight.png"
+        "text": "品牌",
+        "iconPath": "/resources/toolBar_brandList.png",
+        "selectedIconPath": "/resources/toolBar_brandListLight.png"
       },
       {
         "pagePath": "pages/baopin/baopin",
@@ -38,5 +40,5 @@
       }
     ]
   },
-  "debug":true
+  "debug": true
 }

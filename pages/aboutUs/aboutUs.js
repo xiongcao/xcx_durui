@@ -1,5 +1,3 @@
-// pages/aboutUs/aboutUs.js
-
 const app = getApp()
 Page({
 
@@ -8,75 +6,31 @@ Page({
    */
   data: {
     shouquanshu: [
-      `${app.globalData.imagePath}/shouquanshu/aolunna.jpg`,
-      `${app.globalData.imagePath}/shouquanshu/babyFoot.jpg`,
-      `${app.globalData.imagePath}/shouquanshu/hairmax.jpg`
+      `${app.globalData.ossImagePath}/shouquanshu/aolunna.jpg`,
+      `${app.globalData.ossImagePath}/shouquanshu/babyFoot.jpg`,
+      `${app.globalData.ossImagePath}/shouquanshu/hairmax.jpg`
     ],
     companyImage: [
-      `${app.globalData.imagePath}/companyImage/1.jpg`,
-      `${app.globalData.imagePath}/companyImage/2.jpg`,
-      `${app.globalData.imagePath}/companyImage/3.jpg`
+      `${app.globalData.ossImagePath}/companyImage/1.jpg`,
+      `${app.globalData.ossImagePath}/companyImage/2.jpg`,
+      `${app.globalData.ossImagePath}/companyImage/3.jpg`
     ],
   },
   aptitude:function(){
-    console.log("aptitude");
+    wx.navigateTo({
+      url: '/pages/companyAptitude/companyAptitude'
+    })
   },
   companyImages:function(){
-    console.log("companyImages");
+    wx.navigateTo({
+      url: '/pages/companyImage/companyImage'
+    })
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+  sample:function(){
+    wx.showToast({
+      title: '此功能在未开放',
+      icon: 'none',
+      duration: 2000
+    })
   }
 })

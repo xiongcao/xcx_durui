@@ -1,4 +1,3 @@
-<!--pages/aboutUs/aboutUs.wxml-->
 <view>
   <view class='top'>
     <view class='logo'>
@@ -20,7 +19,7 @@
     <view class='address'>公司地址：上海市徐汇区虹桥路333号505B</view>
     <view class='phoneNumber'>联系方式：18502133310（周红）</view>
   </view>
-  <view class='sample'>
+  <view class='sample' bindtap='sample'>
     <view>样品申请</view>
     <image class="arrow" src="/resources/arrow.png"></image>
   </view>

@@ -1,0 +1,5 @@
+<view bindtap='previewImage'>
+  <block wx:for="{{imageNameList}}" wx:for-item="img" wx:key="a">
+    <image class="{{(index+1) % 3 == 0 ? 'middle':''}}" data-index="{{img}}" src="http://oss.kxlist.com/durui/companyImage/{{img}}.jpg"></image>
+  </block>
+</view>

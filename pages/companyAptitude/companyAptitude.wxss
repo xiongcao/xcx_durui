@@ -1,0 +1,16 @@
+/* view{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
+image{
+  width: 240rpx;
+  height:240rpx;
+  margin-bottom: 16rpx;
+  margin-right: 15rpx;
+}
+
+.middle{
+  margin-right: 0;
+}
+
