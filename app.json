@@ -4,7 +4,8 @@
     "pages/baopin/baopin",
     "pages/aboutUs/aboutUs",
     "pages/companyImage/companyImage",
-    "pages/companyAptitude/companyAptitude"
+    "pages/companyAptitude/companyAptitude",
+    "pages/brand/brand"
   ],
   "window": {
     "backgroundTextStyle": "light",

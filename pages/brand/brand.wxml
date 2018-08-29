@@ -1,0 +1,11 @@
+<view>
+  <view class='brandImage'>
+    <image src='{{brandInfo.brandLogo}}' class='brandLogo'></image>
+    <image src="{{brandInfo.brandImage}}" class='brandBackImage'></image>
+  </view>
+  <view class='brandInfo'>
+    <view class='brandName'>{{brandInfo.brandNameEN}}/{{brandInfo.brandName}}</view>
+    <view class='brandAbout'>{{brandInfo.brandAbout}}</view>
+    <view class='arrow'><image src="/resources/arrow.png"></image></view>
+  </view>
+</view>

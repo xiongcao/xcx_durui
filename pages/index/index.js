@@ -34,6 +34,11 @@ Page({
   onLoad: function () {
  
   },
+  toBrandDetail:function(e){
+    wx.navigateTo({
+      url: '/pages/brand/brand?id=${e.target.dataset.id}'
+    })
+  },
   getUserInfo: function(e) {
     console.log(e,"userinfo")
   }

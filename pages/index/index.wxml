@@ -7,9 +7,9 @@
       </swiper-item>
     </block>
   </swiper> 
-  <view class='brandImgList'>
+  <view class='brandImgList' bindtap='toBrandDetail'>
     <block wx:for="{{brandImgList}}" wx:for-item="img" wx:key="b">
-      <image src="{{img}}"></image>
+      <image data-id="{{index}}" src="{{img}}"></image>
     </block>
   </view>
 </view>

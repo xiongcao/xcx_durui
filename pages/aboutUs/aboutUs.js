@@ -17,7 +17,7 @@ Page({
     ],
   },
   aptitude:function(){
-    wx.navigateTo({
+    wx.navigateTo({ 
       url: '/pages/companyAptitude/companyAptitude'
     })
   },
