@@ -2,11 +2,23 @@
   width: 100%;
   height: 240rpx;
   position: relative;
+
+}
+
+.brandImage > .backMask{
+  width: 100%;
+  height: 240rpx;
+  background: #000000;
+  position: absolute;
+  opacity: 0.3;
+  z-index: 1;
 }
 
 .brandImage > .brandBackImage{
   width: 100%;
   height: 240rpx;
+  position: absolute;
+  z-index: 0;
 }
 
 .brandImage > .brandLogo{
@@ -18,10 +30,12 @@
   bottom: -50rpx;
   border-radius: 5rpx;
   border: solid 2rpx #ededed;
+  z-index: 2;
 }
 
 .brandInfo{
   position: relative;
+  background: #ffffff;
 }
 
 .brandInfo .brandName{
@@ -31,24 +45,210 @@
   color: #fff;
   font-size: 32rpx;
   font-weight: 500;
+  z-index: 1;
 }
 
 .brandInfo .brandAbout{
   font-size: 28rpx;
-  line-height: 1.71;
+  line-height: 1.50;
   text-align: left;
   color: #4a4a4a;
   padding:0 20rpx;
-  margin-top:60rpx;
+  padding-top:60rpx;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s; /* Firefox 4 */
+  -webkit-transition: max-height 0.5s; /* Safari 和 Chrome */
+  -o-transition: max-height 0.5s; /* Opera */
 }
 
 .brandInfo .arrow{
   height: 30rpx;
-  line-break: 30rpx;
+  line-height: 30rpx;
   text-align: center;
+  padding: 10rpx 0 15rpx;
+  border-bottom: 2rpx solid #d8d8d8;
 }
 
 .brandInfo .arrow image{
-  width: 34rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.tools{
+  width: 100%;
+  height: 76rpx;
+  background: #ededed;
+  padding:2rpx 0;
+  box-sizing: border-box;
+}
+.tools>view{
+  background: #ffffff;
+  /* height: 72rpx;
+  line-height: 72rpx; */
+  overflow: hidden;
+  font-size: 24rpx;
+  letter-spacing: normal;
+  color: #8f8e94;
+}
+
+.tools .nav-item{
+  float: left;
+  margin: 20rpx 0;
+  padding: 0 56rpx;
+  border-right: 4rpx solid #f3f4f6;
+}
+
+.activeItem{
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+.tools .nav-icon{
+  float: left;
+  width: 72rpx;
+  text-align: center;
+  position: relative;
+  top:16rpx;
+  left: 20rpx;
+}
+
+.tools .nav-icon image{
+  width:40rpx;
+  height: 40rpx;
+}
+
+.inlineView{
+  /* width: 100%; */
+  padding:0 20rpx;
+  background: #ffffff;
+}
+
+.inlineView>.commodityItem{
+  height: 200rpx;
+  padding:20rpx 0;
+  border-bottom: 2rpx solid #ededed;
+  box-sizing: border-box;
+}
+
+.inlineView .commodityItem .commodityImage{
+  width: 160rpx;
+  height: 160rpx;
+  float: left;
+}
+
+.inlineView .commodityItem .commodityImage image{
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.inlineView .commodityItem .commodityInfo{
+  float: left;
+  margin-left: 16rpx;
+  width: calc(100% - 176rpx);
+  height: 160rpx;
+}
+
+.inlineView .commodityName{
+  height: 72rpx;
+  font-size: 28rpx;
+  letter-spacing: 0.4rpx;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.inlineView .barCodeOrOrigin{
+  height: 36rpx;
+  line-height: 36rpx;
+  font-size: 22rpx;
+  letter-spacing: 0.4rpx;
+  text-align: left;
+  color: #8e8e93;
+}
+
+.inlineView .price{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  letter-spacing: 0.4rpx;
+  text-align: left;
+  color: #32c28b;
+}
+
+.inlineView .price text{
+  font-size: 20rpx;
+}
+.inlineView .barCodeOrOrigin .origin{
+  margin-left: 30rpx;
+}
+
+.blockView{
+  /* padding:0 30rpx; */
+  padding-top: 4rpx;
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #ededed;
+}
+
+.blockView .commodityItem{
+  width: 365rpx;
+  padding: 10rpx;
+  margin-bottom: 20rpx; 
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.blockView .commodityImage,.blockView .commodityImage image{
+  width: 335rpx;
+  height: 335rpx;
+}
+
+.blockView .commodityName{
+  width: 355rpx;
   height: 34rpx;
+  line-height: 34rpx;
+  margin-top: 12rpx;
+  font-size: 12px;
+  text-align: left;
+  color: #4a4a4a;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.blockView .price{
+  width: 355rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  letter-spacing: 0.4rpx;
+  text-align: left;
+  color: #32c28b;
+}
+
+.blockView .price text{
+  font-size: 20rpx;
+}
+
+.empty {
+  padding-top: 100rpx;
+  text-align: center;
+}
+
+.empty  image {
+  width: 134rpx;
+  height: 134rpx;
+}
+
+.empty  view {
+  font-size: 48rpx;
+  font-weight: 500;
+  text-align: center;
+  color: #ababb0;
+  margin-top: 40rpx;
 }

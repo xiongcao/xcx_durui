@@ -1,11 +1,45 @@
 <view>
   <view class='brandImage'>
-    <image src='{{brandInfo.brandLogo}}' class='brandLogo'></image>
+    <view class='backMask'></view>
     <image src="{{brandInfo.brandImage}}" class='brandBackImage'></image>
+    <image src='{{brandInfo.brandLogo}}' class='brandLogo'></image>
   </view>
   <view class='brandInfo'>
     <view class='brandName'>{{brandInfo.brandNameEN}}/{{brandInfo.brandName}}</view>
-    <view class='brandAbout'>{{brandInfo.brandAbout}}</view>
-    <view class='arrow'><image src="/resources/arrow.png"></image></view>
+    <view class='brandAbout' bindtap='toggleDetail' style="max-height:{{brandDetailFlag?'120rpx':'1000rpx'}}">{{brandInfo.brandAbout}}</view>
+    <view class='arrow' bindtap='toggleDetail'><image src="/resources/arrow.png" style="transform: rotate({{brandDetailFlag?'0deg':'180deg'}})"></image></view>
+  </view>
+  <view class='tools' wx:if="{{commodityList.length!=0}}">
+    <view>
+      <view class="nav-item {{orderKey=='pub'?'activeItem':''}}" data-order="pub" bindtap='commoditySort'>综合排序</view>
+      <view class="nav-item {{orderKey=='time'?'activeItem':''}}" data-order="time" bindtap='commoditySort'>新品优先</view>
+      <view class="nav-item {{orderKey=='name'?'activeItem':''}}" data-order="name" bindtap='commoditySort'>名称排序</view>
+      <view class='nav-icon' bindtap='changeIcon'><image src="/resources/{{viewIcon}}.png"></image></view>
+    </view>
+  </view>
+  <view class='inlineView' wx:if="{{viewStatus&&commodityList.length!=0}}">
+    <block wx:for="{{commodityList}}" wx:key="i">
+      <view class='commodityItem' bindtap='toCommodityDetail' data-id='{{item.id}}'>
+        <view class='commodityImage'><image src='{{item.image}}'></image></view>
+        <view class='commodityInfo'>
+          <view class='commodityName'>{{item.name}}</view>
+          <view class='barCodeOrOrigin'><text>条码：{{item.barcode}}</text><text class='origin'>产地：{{item.origin}}</text></view>
+          <view class='price'>{{item.price}}<text>元</text></view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class='blockView' wx:if="{{(!viewStatus)&&commodityList.length!=0}}">
+    <block wx:for="{{commodityList}}" wx:key="i">
+      <view class='commodityItem' bindtap='toCommodityDetail' data-id='{{item.id}}'>
+        <view class='commodityImage'><image src='{{item.image}}'></image></view>
+        <view class='commodityName'>{{item.name}}</view>
+        <view class='price'>{{item.price}}<text>元</text></view>
+      </view>
+    </block>
+  </view>
+  <view class='empty' wx:if="{{commodityList.length==0}}">
+    <!-- <view><image src="/resources/noCommodity.png"></image></view> -->
+    <text>没有找到商品哟</text>
   </view>
 </view>

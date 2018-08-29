@@ -5,7 +5,8 @@
     "pages/aboutUs/aboutUs",
     "pages/companyImage/companyImage",
     "pages/companyAptitude/companyAptitude",
-    "pages/brand/brand"
+    "pages/brand/brand",
+    "pages/commodity/commodity"
   ],
   "window": {
     "backgroundTextStyle": "light",
