@@ -1,1 +1,214 @@
-/* pages/commodity/commodity.wxss */
+/* @import '../../utils/wxParse/wxParse.wxss'; */
+.fixed{
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  margin: 0!important;
+}
+swiper{
+  height: 750rpx;
+}
+swiper image{
+  width: 100%;
+  height: 750rpx;
+}
+
+.commodityBaseInfo{
+  padding: 20rpx 30rpx;
+  background: #ffffff;
+}
+
+.commodityBaseInfo .name{
+  height: 92rpx;
+  /* line-height: 92rpx; */
+  font-size: 32rpx;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.commodityBaseInfo .barCodeOrOrigin{
+  height: 36rpx;
+  line-height: 36rpx;
+  text-align: left;
+  color: #8e8e93;
+  font-size: 22rpx;
+  /* margin: 16rpx 0; */
+}
+.commodityBaseInfo .barCodeOrOrigin .origin{
+  float: left;
+}
+
+.commodityBaseInfo .barCodeOrOrigin .origin{
+  float: right;
+}
+
+.commodityBaseInfo .price{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  letter-spacing: 0.6rpx;
+  text-align: left;
+  color: #32c28b;
+}
+
+.commodityBaseInfo .price text{
+  font-size: 20rpx;
+}
+
+.brief{
+  background: #ffffff;
+  margin-top: 20rpx;
+  padding: 10rpx 20rpx;
+}
+
+.brief .title{
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+
+.brief .briefInfo{
+  font-size: 28rpx;
+  color: #4a4a4a;
+  margin-top:10rpx;
+}
+
+.nav{
+  height: 76rpx;
+  line-height: 76rpx;
+  background-color: #ffffff;
+  margin: 10rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav view{
+  width: 160rpx;
+  color: #8e8e93;
+  font-size: 32rpx;
+  text-align: center;
+  padding-bottom: 2rpx;
+}
+
+.nav .navActive{
+  color: #32c28b;
+  border-bottom: 4rpx solid #32c28b;
+}
+
+.nav .detail{
+  margin-left: 108rpx;
+}
+
+.nav .commodityDetail{
+  margin-right: 108rpx;
+}
+
+.commodityDetailInfo{
+  width: 100%;
+  overflow: hidden;
+}
+
+.commodityDetailInfo .topTitle{
+  width: 100%;
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #bebebe;
+}
+
+.usage{
+  background: #ffffff;
+  padding: 20rpx 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.ctitle{
+  font-size: 32rpx;
+  color: #8f8e94;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16rpx;
+}
+
+.cinfo{
+  font-size: 28rpx;
+  color: #373737;
+}
+
+.ingredient .cinfo{
+  text-align: center;
+}
+
+.commodityProperty{
+  background: #ffffff;
+  padding-left: 30rpx;
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+  letter-spacing: 0.4rpx;
+  color: #8e8e93;
+}
+
+.commodityProperty .item,.commoditySkuProperty .item{
+  padding: 20rpx 0;
+  border-bottom: 2rpx solid #d8d8d8;
+}
+
+.commodityProperty .lastItem ,.commoditySkuProperty .lastItem{
+  border-bottom: none;
+}
+
+.commodityProperty .item::after ,.commoditySkuProperty .item::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.commodityProperty .key{
+  float: left;
+  width: 144rpx;
+  text-align: left;
+}
+
+.commodityProperty .value{
+  float: left;
+  width: calc(100% - 144rpx);
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.commoditySkuProperty{
+  background: #ffffff;
+  padding-left: 30rpx;
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+  letter-spacing: 0.4rpx;
+  color: #8e8e93;
+}
+
+.commoditySkuProperty .key{
+  float: left;
+  width: 200rpx;
+  text-align: left;
+}
+
+.commoditySkuProperty .value{
+  float: left;
+  width: calc(100% - 200rpx);
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.ImageDetail{
+  overflow: hidden;
+}
+
+.ImageDetail image{
+  overflow: hidden;
+}

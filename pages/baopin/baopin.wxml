@@ -4,7 +4,7 @@
     <view class="title">{{imageList.name}}</view>
     <view class='imageBody'>
       <block wx:for="{{imageList.imageList}}" wx:for-item="image"  wx:key="b">
-        <image src="{{image.image}}"></image>
+        <image bindtap='toCommodityDetail' data-id='{{index}}' src="{{image.image}}"></image>
       </block>
     </view>
   </view>

@@ -5,6 +5,14 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    // 获取系统信息 
+    var that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        console.log(res,"res");
+        that.globalData.winHeight = res.windowHeight
+      }
+    })
 
     // 登录
     wx.login({
@@ -35,6 +43,7 @@ App({
   },
   globalData: {
     userInfo: null,
+    winHeight:0,
     imagePath:"/resources",
     ossImagePath:'http://oss.kxlist.com/durui',
     kxlistPath:'https://oss.kxlist.com'

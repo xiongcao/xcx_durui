@@ -1,2 +1,59 @@
-<!--pages/commodity/commodity.wxml-->
-<text>pages/commodity/commodity.wxml</text>
+<import src="../../utils/wxParse/wxParse.wxml"/>
+<scroll-view style="height:{{winHeight+50}}px" class="scrollViewer" scroll-y="true" bindscroll="scrolling" scroll-into-view="{{toView}}" bindscroll="scrollTop">
+  <swiper indicator-dots="true" autoplay="true" interval="2000" circular="true" duration="500">
+    <block wx:for="{{imgUrls}}" wx:key="i">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='commodityBaseInfo'>
+    <view class='name'>color deep/咖乐迪 缤纷盈彩12色唇膏盘缤纷盈彩12色唇膏盘9.6g</view>
+    <view class='barCodeOrOrigin'><text class='barCode'>条码：4931449424842</text><text class='origin'>产地：日本</text></view>
+    <view class='price'>150.00<text>元</text></view>
+  </view>
+  <view class='brief'>
+    <view class='title'>商品简介</view>
+    <view class='briefInfo'>SPF20 PA++ 修饰遮盖恼人的肌肤问题。打造充满「素肌感」的自然纯美肌肤。 能紧贴干燥粗糙肤，保持滋润的纯美妆效。</view>
+  </view>
+  <view class="nav {{menuFixed?'fixed':''}}" id="affix" bindtap='navTap'>
+    <view class="detail {{detailFlag?'navActive':''}}" data-id="0" data-name="module1">图文详情</view>
+    <view class="commodityDetail {{detailFlag?'':'navActive'}}" data-id="1" data-name="module2">商品信息</view>
+  </view>
+  <view class='ImageDetail' id="module1">
+    <template is="wxParse" data="{{wxParseData:detailImage.nodes}}"/>
+  </view>
+  <view class='commodityDetailInfo' id="module2">
+    <view class='topTitle'>------ 商品信息 ------</view>
+    <view class='usage'>
+      <view class='ctitle'>使用方法</view>
+      <view class='cinfo'>用附属的笔刷根据肤色调制，然后涂刷在有瑕疵的部位；如用量过少，就得不到充分的紫外线防御效果；建议将本品与防御紫外线的基础霜一起使用，防止紫外线效果更好。</view>
+    </view>
+    <view class='usage'>
+      <view class='ctitle'>注意事项</view>
+      <view class='cinfo'>小心使用，避免沾染衣物；用完后，请用纸巾等将笔尖擦拭干净。收回容器内并改紧盖子；请勿置于高温、潮湿或阳光直射处保存。</view>
+    </view>
+    <view class='usage ingredient'>
+      <view class='ctitle'>成分</view>
+      <view class='cinfo'>聚二甲基硅氧烷、石蜡、高岭土</view>
+    </view>
+    <view class='commodityProperty'>
+      <view class='item'><view class='key'>颜色</view><view class='value'>白色</view></view>
+      <view class='item'><view class='key'>香型</view><view class='value'>👃闻出来算我输</view></view>
+      <view class='item'><view class='key'>适用人群</view><view class='value'>适合 18 岁以上任何肤质使用</view></view>
+      <view class='item'><view class='key'>功效</view><view class='value'>遮瑕</view></view>
+      <view class='item'><view class='key'>保质期</view><view class='value'>1095 天</view></view>
+      <view class='item'><view class='key'>官方网址</view><view class='value'>http://medixjapan.jp/</view></view>
+      <view class='item'><view class='key'>厂名</view><view class='value'>株式会社メディクスジャパン</view></view>
+      <view class='item lastItem'><view class='key'>厂址</view><view class='value'>东京都新宿区新宿4-3-17</view></view>
+      <!-- <view class='item lastItem'><view class='key'>超过四个 字的时候这么排</view><view class='value'>知道了吗</view></view> -->
+    </view>
+    <view class='commoditySkuProperty'>
+      <view class='item'><view class='key'>产品毛重(kg)</view><view class='value'>0.2</view></view>
+      <view class='item'><view class='key'>产品净重(kg)</view><view class='value'>0.16</view></view>
+      <view class='item'><view class='key'>产品长(mm)</view><view class='value'>235</view></view>
+      <view class='item'><view class='key'>产品宽(mm)</view><view class='value'>157</view></view>
+      <view class='item lastItem'><view class='key'>产品高(mm)</view><view class='value'>20</view></view>
+    </view>
+  </view>
+</scroll-view>
